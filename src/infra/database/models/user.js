@@ -1,7 +1,7 @@
 const { encryptPassword } = require('../../encryption')
 
 module.exports = function (sequelize, DataTypes) {
-  const User = sequelize.define('users', {
+  const User = sequelize.define('skUser', {
     id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,

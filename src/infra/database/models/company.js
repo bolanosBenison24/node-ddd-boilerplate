@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-  const Company = sequelize.define('companies', {
+  const Company = sequelize.define('skCompany', {
     id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,

@@ -1,7 +1,7 @@
 'use strict'
 module.exports = {
   up: function (queryInterface, Sequelize) {
-    return queryInterface.createTable('companies', {
+    return queryInterface.createTable('skCompany', {
       id: {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4,

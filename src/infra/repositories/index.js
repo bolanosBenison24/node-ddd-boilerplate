@@ -2,8 +2,8 @@ const User = require('./user')
 const Company = require('./company')
 
 module.exports = ({ database }) => {
-  const userModel = database.models.users
-  const companyModel = database.models.companies
+  const userModel = database.models.skUser
+  const companyModel = database.models.skCompany
 
   return {
     userRepository: User({ model: userModel }),

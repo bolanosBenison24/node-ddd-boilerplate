@@ -1,7 +1,7 @@
 {
-  "name": "node-ddd-boilerplate",
-  "version": "0.0.0-development",
-  "description": "RESTful api Domain Driven Design",
+  "name": "skyhook-api",
+  "version": "0.1.0-development",
+  "description": "RESTful API - Domain Driven Design",
   "main": "index.js",
   "engines": {
     "node": ">= 12",
@@ -38,10 +38,10 @@
     "docker:test:specs": "npm run docker:script npm run test:specs"
   },
   "lint-staged": {
-    "*.js": "lint"
+    "*.js": "standard --fix"
   },
   "pre-commit": "lint:staged",
-  "author": "Joshua C Alpuerto <joshuacalpuerto@gmail.com>",
+  "author": "Benison B Bolanos <benz.bolanos@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "awilix": "4.2.0",
@@ -60,7 +60,7 @@
     "moment": "2.24.0",
     "moment-timezone": "0.5.23",
     "morgan": "1.9.1",
-    "nodemon": "1.18.10",
+    "nodemon": "1.18.5",
     "passport": "0.4.0",
     "passport-jwt": "4.0.0",
     "pg": "7.8.1",
@@ -80,7 +80,7 @@
     "cz-conventional-changelog": "2.1.0",
     "docsify-cli": "4.3.0",
     "istanbul": "1.1.0-alpha.1",
-    "lint-staged": "8.1.5",
+    "lint-staged": "10.5.4",
     "mocha": "6.1.4",
     "mocha-lcov-reporter": "1.3.0",
     "npm-check": "5.9.0",
@@ -110,7 +110,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshuaalpuerto/node-ddd-boilerplate.git"
+    "url": "https://gitlab.com/offshorly/skyhook-api.git"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"

@@ -2,10 +2,10 @@ const Faker = require('../../../support/fakers')
 
 module.exports = {
   up: function (queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('companies', Faker('companies'), {})
+    return queryInterface.bulkInsert('skCompany', Faker('companies'), {})
   },
 
   down: function (queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('companies', null, {})
+    return queryInterface.bulkDelete('skCompany', null, {})
   }
 }
