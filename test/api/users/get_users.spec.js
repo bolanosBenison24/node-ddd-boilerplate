@@ -52,7 +52,7 @@ describe('Routes: GET UsersEntity', () => {
     it('should return all users', (done) => {
       request.get(`${BASE_URI}/users`)
         .set('Authorization', `JWT ${token}`)
-        .expect(404)
+        .expect(200)
         .end((err, res) => {
           expect(res.body.data).to.have.length(2)
           done(err)

@@ -38,7 +38,10 @@
     "docker:test:specs": "npm run docker:script npm run test:specs"
   },
   "lint-staged": {
-    "*.js": "yarn lint"
+    "*.js": [
+      "yarn lint",
+      "yarn lint:fix"
+    ]
   },
   "pre-commit": "lint:staged",
   "author": "Benison B Bolanos <benz.bolanos@gmail.com>",
